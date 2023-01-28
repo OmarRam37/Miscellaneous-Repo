@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>9960d8f130e64df68b644b1fe29e6e75</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="proyecto-titanic" class="cell markdown">
+<h1>Proyecto Titanic</h1>
+</section>
+<section id="cargar-librerias" class="cell markdown">
+<h2>Cargar Librerias</h2>
+</section>
+<div class="cell code" data-execution_count="87">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier <span class="co"># Import Decision Tree Classifier</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split <span class="co"># Import train_test_split function</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> metrics <span class="co">#Import scikit-learn metrics module for accuracy calculation</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report, confusion_matrix, roc_curve</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Import Random Forest Model</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span></code></pre></div>
+</div>
+<section id="cargar-dataset" class="cell markdown">
+<h2>Cargar dataset</h2>
+</section>
+<div class="cell code" data-execution_count="88">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> pd.read_csv(<span class="st">&#39;./train.csv&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> pd.read_csv(<span class="st">&#39;./test.csv&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="89">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="89">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>C123</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen, Mr. William Henry</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>8.0500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="limpieza-de-datos" class="cell markdown">
+<h2>Limpieza de datos</h2>
+</section>
+<div class="cell code" data-execution_count="90">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>train.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="90">
+<pre><code>PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="91">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>train.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    object 
+ 11  Embarked     889 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+</code></pre>
+</div>
+</div>
+<section id="investigacion-de-datos" class="cell markdown">
+<h2>Investigacion de datos</h2>
+</section>
+<div class="cell code" data-execution_count="92">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> <span class="st">&quot;Survived&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="92">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Survived&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/ad700ddcc562a233a0212836c59ef61fe45ad106.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="93">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> <span class="st">&quot;Survived&quot;</span>, hue <span class="op">=</span> <span class="st">&quot;Sex&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="93">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Survived&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/5e3b4dd47fb2d0223d0caff63b31337965832aaf.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="94">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> <span class="st">&quot;Survived&quot;</span>, hue <span class="op">=</span> <span class="st">&quot;Pclass&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="94">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Survived&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/1d57d09f5b6fb31d3692c4d0c2c70514d503e734.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="95">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sns.displot(data <span class="op">=</span> train[<span class="st">&quot;Age&quot;</span>].dropna(), kde <span class="op">=</span> <span class="va">False</span>, bins <span class="op">=</span> <span class="dv">30</span>, color <span class="op">=</span> <span class="st">&#39;Orange&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="95">
+<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x1d00b34e770&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/2c56585d9b5e6be309f0b788e8ad264398bfdcca.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="96">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> train[<span class="st">&quot;Parch&quot;</span>], color <span class="op">=</span> <span class="st">&#39;Blue&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="96">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Parch&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/1294aa197e303395dda9f5b606b2a53cefb18ea2.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="97">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data <span class="op">=</span> train[<span class="st">&quot;Fare&quot;</span>], bins <span class="op">=</span> <span class="dv">50</span>, color <span class="op">=</span> <span class="st">&#39;Purple&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="97">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Fare&#39;, ylabel=&#39;Count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/767d8336f707a29436e435cc7626356f72cb1eae.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="98">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x <span class="op">=</span> <span class="st">&quot;Pclass&quot;</span>, y <span class="op">=</span> <span class="st">&quot;Age&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="98">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Pclass&#39;, ylabel=&#39;Age&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/4ff55bc55db3ee76ae2cc99a880391209d0951dd.png" /></p>
+</div>
+</div>
+<section id="imputar-datos" class="cell markdown">
+<h2>Imputar Datos</h2>
+</section>
+<div class="cell code" data-execution_count="99">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Imputar edad</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> imputar_edad(cols):</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    Age <span class="op">=</span> cols [<span class="dv">0</span>]</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    Pclass <span class="op">=</span> cols [<span class="dv">1</span>]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pd.isna(Age):</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> Pclass <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">37</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> Pclass <span class="op">==</span> <span class="dv">2</span>: </span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">29</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">24</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Age</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="100">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&quot;Age&quot;</span>] <span class="op">=</span> train[[<span class="st">&quot;Age&quot;</span>,<span class="st">&quot;Pclass&quot;</span>]].<span class="bu">apply</span>(imputar_edad, axis <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="101">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>train.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="101">
+<pre><code>PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age              0
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="102">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x <span class="op">=</span> <span class="st">&quot;Pclass&quot;</span>, y <span class="op">=</span> <span class="st">&quot;Age&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="102">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;Pclass&#39;, ylabel=&#39;Age&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/c01275ea9a63e2755c37db8e36958f0f99265f99.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="103">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x <span class="op">=</span> <span class="st">&quot;SibSp&quot;</span>, y <span class="op">=</span> <span class="st">&quot;Age&quot;</span>, data <span class="op">=</span> train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="103">
+<pre><code>&lt;AxesSubplot: xlabel=&#39;SibSp&#39;, ylabel=&#39;Age&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/115fa3036f1e7a533ea9e1e6b9cbd3f67d107b86.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="104">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>train.drop(<span class="st">&quot;Cabin&quot;</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="105">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>train.dropna(inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="106">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>train.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="106">
+<pre><code>PassengerId    0
+Survived       0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+Embarked       0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="107">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Name&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;Name&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&quot;.&quot;</span>,<span class="st">&quot;,&quot;</span>,n <span class="op">=</span> <span class="dv">1</span>).<span class="bu">str</span>.replace(<span class="st">&#39; &#39;</span>,<span class="st">&#39;&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>C:\Users\alfon\AppData\Local\Temp\ipykernel_28136\1369043826.py:1: FutureWarning: The default value of regex will change from True to False in a future version. In addition, single character regular expressions will *not* be treated as literal strings when regex=True.
+  train[&#39;Name&#39;] = train[&#39;Name&#39;].str.replace(&quot;.&quot;,&quot;,&quot;,n = 1).str.replace(&#39; &#39;,&#39;&#39;)
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="108">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>train[[<span class="st">&#39;lastname&#39;</span>,<span class="st">&#39;title&#39;</span>,<span class="st">&#39;name&#39;</span>]] <span class="op">=</span> train[<span class="st">&#39;Name&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;,&#39;</span>,expand<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="109">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(train[<span class="st">&#39;title&#39;</span>], train[<span class="st">&#39;Sex&#39;</span>])</span></code></pre></div>
+<div class="output execute_result" data-execution_count="109">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sex</th>
+      <th>female</th>
+      <th>male</th>
+    </tr>
+    <tr>
+      <th>title</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Capt</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Col</th>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Don</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Dr</th>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>Jonkheer</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Lady</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Major</th>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Master</th>
+      <td>0</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>Miss</th>
+      <td>181</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Mlle</th>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Mme</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Mr</th>
+      <td>0</td>
+      <td>517</td>
+    </tr>
+    <tr>
+      <th>Mrs</th>
+      <td>124</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Ms</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Rev</th>
+      <td>0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>Sir</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>theCountess</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="110">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;title&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;title&#39;</span>].replace([<span class="st">&#39;Lady&#39;</span>, <span class="st">&#39;theCountess&#39;</span>,<span class="st">&#39;Capt&#39;</span>, <span class="st">&#39;Col&#39;</span>,<span class="st">&#39;Don&#39;</span>, <span class="st">&#39;Dr&#39;</span>,</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&#39;Major&#39;</span>, <span class="st">&#39;Rev&#39;</span>, <span class="st">&#39;Sir&#39;</span>, <span class="st">&#39;Jonkheer&#39;</span>, <span class="st">&#39;Dona&#39;</span>], <span class="st">&#39;Other&#39;</span>).replace(</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>                                                <span class="st">&#39;Mlle&#39;</span>, <span class="st">&#39;Miss&#39;</span>).replace(</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">&#39;Ms&#39;</span>, <span class="st">&#39;Miss&#39;</span>).replace(</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>                                                        <span class="st">&#39;Mme&#39;</span>, <span class="st">&#39;Mrs&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="111">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>pd.crosstab(train[<span class="st">&#39;title&#39;</span>], train[<span class="st">&#39;Sex&#39;</span>])</span></code></pre></div>
+<div class="output execute_result" data-execution_count="111">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sex</th>
+      <th>female</th>
+      <th>male</th>
+    </tr>
+    <tr>
+      <th>title</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Master</th>
+      <td>0</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>Miss</th>
+      <td>184</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Mr</th>
+      <td>0</td>
+      <td>517</td>
+    </tr>
+    <tr>
+      <th>Mrs</th>
+      <td>125</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Other</th>
+      <td>3</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="112">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="112">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Embarked</th>
+      <th>lastname</th>
+      <th>title</th>
+      <th>name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund,Mr,OwenHarris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>S</td>
+      <td>Braund</td>
+      <td>Mr</td>
+      <td>OwenHarris</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings,Mrs,JohnBradley(FlorenceBriggsThayer)</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C</td>
+      <td>Cumings</td>
+      <td>Mrs</td>
+      <td>JohnBradley(FlorenceBriggsThayer)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen,Miss,Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>S</td>
+      <td>Heikkinen</td>
+      <td>Miss</td>
+      <td>Laina</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle,Mrs,JacquesHeath(LilyMayPeel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>S</td>
+      <td>Futrelle</td>
+      <td>Mrs</td>
+      <td>JacquesHeath(LilyMayPeel)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen,Mr,WilliamHenry</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>8.0500</td>
+      <td>S</td>
+      <td>Allen</td>
+      <td>Mr</td>
+      <td>WilliamHenry</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="113">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> train.drop([<span class="st">&#39;Name&#39;</span>,<span class="st">&#39;lastname&#39;</span>,<span class="st">&#39;name&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="114">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Group&#39;</span>] <span class="op">=</span> pd.qcut(train[<span class="st">&#39;Fare&#39;</span>], <span class="dv">4</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>train[[<span class="st">&#39;Group&#39;</span>, <span class="st">&#39;Survived&#39;</span>]].groupby([<span class="st">&#39;Group&#39;</span>], as_index<span class="op">=</span><span class="va">False</span>).mean().sort_values(by<span class="op">=</span><span class="st">&#39;Group&#39;</span>, ascending<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="114">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Group</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>(-0.001, 7.896]</td>
+      <td>0.197309</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>(7.896, 14.454]</td>
+      <td>0.303571</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>(14.454, 31.0]</td>
+      <td>0.454955</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>(31.0, 512.329]</td>
+      <td>0.577273</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="115">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>train.loc[ train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="fl">7.91</span>, <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>train.loc[(train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="fl">7.91</span>) <span class="op">&amp;</span> (train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="fl">14.454</span>), <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>train.loc[(train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="fl">14.454</span>) <span class="op">&amp;</span> (train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="dv">31</span>), <span class="st">&#39;Fare&#39;</span>]   <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>train.loc[ train[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="dv">31</span>, <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">3</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="116">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;Fare&#39;</span>].astype(<span class="bu">int</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="117">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="117">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Embarked</th>
+      <th>title</th>
+      <th>Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>0</td>
+      <td>S</td>
+      <td>Mr</td>
+      <td>(-0.001, 7.896]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>3</td>
+      <td>C</td>
+      <td>Mrs</td>
+      <td>(31.0, 512.329]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Miss</td>
+      <td>(7.896, 14.454]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>3</td>
+      <td>S</td>
+      <td>Mrs</td>
+      <td>(31.0, 512.329]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Mr</td>
+      <td>(7.896, 14.454]</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="118">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;GroupA&#39;</span>] <span class="op">=</span> pd.qcut(train[<span class="st">&#39;Age&#39;</span>], <span class="dv">5</span>)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>train[[<span class="st">&#39;GroupA&#39;</span>, <span class="st">&#39;Survived&#39;</span>]].groupby([<span class="st">&#39;GroupA&#39;</span>], as_index<span class="op">=</span><span class="va">False</span>).mean().sort_values(by<span class="op">=</span><span class="st">&#39;GroupA&#39;</span>, ascending<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="118">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>GroupA</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>(0.419, 20.0]</td>
+      <td>0.458101</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>(20.0, 24.0]</td>
+      <td>0.299145</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>(24.0, 30.0]</td>
+      <td>0.363636</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>(30.0, 38.0]</td>
+      <td>0.452229</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>(38.0, 80.0]</td>
+      <td>0.369318</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="119">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>train.loc[ train[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">20</span>, <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>train.loc[(train[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">20</span>) <span class="op">&amp;</span> (train[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">24</span>), <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>train.loc[(train[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">24</span>) <span class="op">&amp;</span> (train[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">30</span>), <span class="st">&#39;Age&#39;</span>]   <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>train.loc[(train[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">30</span>) <span class="op">&amp;</span> (train[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">38</span>), <span class="st">&#39;Age&#39;</span>]   <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>train.loc[ train[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">38</span>, <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">4</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="120">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>train[<span class="st">&#39;Age&#39;</span>] <span class="op">=</span> train[<span class="st">&#39;Age&#39;</span>].astype(<span class="bu">int</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="121">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> pd.get_dummies(train[<span class="st">&quot;title&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="122">
+<div class="sourceCode" id="cb50"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>sex <span class="op">=</span> pd.get_dummies(train[<span class="st">&quot;Sex&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="123">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>embarked <span class="op">=</span> pd.get_dummies(train[<span class="st">&quot;Embarked&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="124">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>train <span class="op">=</span> pd.concat([train,sex,embarked,title] , axis <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="125">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="125">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Embarked</th>
+      <th>title</th>
+      <th>Group</th>
+      <th>GroupA</th>
+      <th>male</th>
+      <th>Q</th>
+      <th>S</th>
+      <th>Miss</th>
+      <th>Mr</th>
+      <th>Mrs</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>male</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>0</td>
+      <td>S</td>
+      <td>Mr</td>
+      <td>(-0.001, 7.896]</td>
+      <td>(20.0, 24.0]</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>female</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>3</td>
+      <td>C</td>
+      <td>Mrs</td>
+      <td>(31.0, 512.329]</td>
+      <td>(30.0, 38.0]</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>female</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Miss</td>
+      <td>(7.896, 14.454]</td>
+      <td>(24.0, 30.0]</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>female</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>3</td>
+      <td>S</td>
+      <td>Mrs</td>
+      <td>(31.0, 512.329]</td>
+      <td>(30.0, 38.0]</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>male</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Mr</td>
+      <td>(7.896, 14.454]</td>
+      <td>(30.0, 38.0]</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="126">
+<div class="sourceCode" id="cb54"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>train.drop([<span class="st">&#39;PassengerId&#39;</span>, <span class="st">&#39;Sex&#39;</span>, <span class="st">&#39;Embarked&#39;</span>, <span class="st">&#39;Ticket&#39;</span>,<span class="st">&#39;title&#39;</span>,<span class="st">&#39;Group&#39;</span>,<span class="st">&#39;GroupA&#39;</span>], axis <span class="op">=</span> <span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="127">
+<div class="sourceCode" id="cb55"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>train.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="127">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+      <th>male</th>
+      <th>Q</th>
+      <th>S</th>
+      <th>Miss</th>
+      <th>Mr</th>
+      <th>Mrs</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="128">
+<div class="sourceCode" id="cb56"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> train.drop(<span class="st">&quot;Survived&quot;</span>, axis <span class="op">=</span> <span class="dv">1</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> train[<span class="st">&quot;Survived&quot;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="129">
+<div class="sourceCode" id="cb57"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(x, y, test_size <span class="op">=</span> <span class="fl">0.30</span>, random_state<span class="op">=</span><span class="dv">101</span>)</span></code></pre></div>
+</div>
+<section id="roc-curve" class="cell markdown">
+<h2>ROC CURVE</h2>
+</section>
+<div class="cell code" data-execution_count="130">
+<div class="sourceCode" id="cb58"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>logmodel <span class="op">=</span> LogisticRegression()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="131">
+<div class="sourceCode" id="cb59"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>logmodel.fit(X_train, y_train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="131">
+<style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="132">
+<div class="sourceCode" id="cb60"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>predicciones <span class="op">=</span> logmodel.predict(X_test)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="133">
+<div class="sourceCode" id="cb61"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (classification_report(y_test, predicciones))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.88       163
+           1       0.88      0.71      0.79       104
+
+    accuracy                           0.85       267
+   macro avg       0.86      0.83      0.84       267
+weighted avg       0.85      0.85      0.85       267
+
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="134">
+<div class="sourceCode" id="cb63"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>confusion_matrix(y_test, predicciones)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="134">
+<pre><code>array([[153,  10],
+       [ 30,  74]], dtype=int64)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="135">
+<div class="sourceCode" id="cb65"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model Accuracy, how often is the classifier correct?</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Accuracy:&quot;</span>,metrics.accuracy_score(y_test, predicciones))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy: 0.850187265917603
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="136">
+<div class="sourceCode" id="cb67"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sacar las probabilidades</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>y_pred_prob <span class="op">=</span> logmodel.predict_proba(X_test) [:,<span class="dv">1</span>]</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>fpr, tpr, thresholds <span class="op">=</span>roc_curve(y_test, y_pred_prob)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="137">
+<div class="sourceCode" id="cb68"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span> (<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregar ROC</span></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>plt.plot(fpr, tpr, color<span class="op">=</span><span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;Roc curve&quot;</span>)</span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a><span class="co">## Random FPR y TPR</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">0</span>,<span class="dv">1</span>], [<span class="dv">0</span>,<span class="dv">1</span>], color<span class="op">=</span><span class="st">&quot;blue&quot;</span>, lw<span class="op">=</span><span class="dv">2</span>, linestyle<span class="op">=</span><span class="st">&quot;--&quot;</span>)</span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Titulo y etiquetas</span></span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;FPR&quot;</span>)</span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;TPR&quot;</span>)</span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Roc curve&quot;</span>)</span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_68a3d3b505c34e35997bd46e26e6bb53/2f0021e190c418a6cdd9047a5404b1c06a5c85ea.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="138">
+<div class="sourceCode" id="cb69"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&quot;Age&quot;</span>] <span class="op">=</span> test[[<span class="st">&quot;Age&quot;</span>,<span class="st">&quot;Pclass&quot;</span>]].<span class="bu">apply</span>(imputar_edad, axis <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="139">
+<div class="sourceCode" id="cb70"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>test.drop(<span class="st">&quot;Cabin&quot;</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="140">
+<div class="sourceCode" id="cb71"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>test.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="140">
+<pre><code>PassengerId    0
+Pclass         0
+Name           0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           1
+Embarked       0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="141">
+<div class="sourceCode" id="cb73"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&quot;Fare&quot;</span>].fillna(test[<span class="st">&quot;Fare&quot;</span>].mean(), inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="142">
+<div class="sourceCode" id="cb74"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;Name&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;Name&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&quot;.&quot;</span>,<span class="st">&quot;,&quot;</span>,n <span class="op">=</span> <span class="dv">1</span>).<span class="bu">str</span>.replace(<span class="st">&#39; &#39;</span>,<span class="st">&#39;&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>C:\Users\alfon\AppData\Local\Temp\ipykernel_28136\1282162450.py:1: FutureWarning: The default value of regex will change from True to False in a future version. In addition, single character regular expressions will *not* be treated as literal strings when regex=True.
+  test[&#39;Name&#39;] = test[&#39;Name&#39;].str.replace(&quot;.&quot;,&quot;,&quot;,n = 1).str.replace(&#39; &#39;,&#39;&#39;)
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="143">
+<div class="sourceCode" id="cb76"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>test[[<span class="st">&#39;lastname&#39;</span>,<span class="st">&#39;title&#39;</span>,<span class="st">&#39;name&#39;</span>]] <span class="op">=</span> test[<span class="st">&#39;Name&#39;</span>].<span class="bu">str</span>.split(<span class="st">&#39;,&#39;</span>,expand<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="144">
+<div class="sourceCode" id="cb77"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;title&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;title&#39;</span>].replace([<span class="st">&#39;Lady&#39;</span>, <span class="st">&#39;theCountess&#39;</span>,<span class="st">&#39;Capt&#39;</span>, <span class="st">&#39;Col&#39;</span>,<span class="st">&#39;Don&#39;</span>, <span class="st">&#39;Dr&#39;</span>,</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">&#39;Major&#39;</span>, <span class="st">&#39;Rev&#39;</span>, <span class="st">&#39;Sir&#39;</span>, <span class="st">&#39;Jonkheer&#39;</span>, <span class="st">&#39;Dona&#39;</span>], <span class="st">&#39;Other&#39;</span>).replace(</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>                                                <span class="st">&#39;Mlle&#39;</span>, <span class="st">&#39;Miss&#39;</span>).replace(</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">&#39;Ms&#39;</span>, <span class="st">&#39;Miss&#39;</span>).replace(</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>                                                        <span class="st">&#39;Mme&#39;</span>, <span class="st">&#39;Mrs&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="145">
+<div class="sourceCode" id="cb78"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> test.drop([<span class="st">&#39;Name&#39;</span>,<span class="st">&#39;lastname&#39;</span>,<span class="st">&#39;name&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="146">
+<div class="sourceCode" id="cb79"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>test.loc[ test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="fl">7.91</span>, <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>test.loc[(test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="fl">7.91</span>) <span class="op">&amp;</span> (test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="fl">14.454</span>), <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>test.loc[(test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="fl">14.454</span>) <span class="op">&amp;</span> (test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&lt;=</span> <span class="dv">31</span>), <span class="st">&#39;Fare&#39;</span>]   <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>test.loc[ test[<span class="st">&#39;Fare&#39;</span>] <span class="op">&gt;</span> <span class="dv">31</span>, <span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> <span class="dv">3</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="147">
+<div class="sourceCode" id="cb80"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;Fare&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;Fare&#39;</span>].astype(<span class="bu">int</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="148">
+<div class="sourceCode" id="cb81"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>test.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="148">
+<pre><code>PassengerId    0
+Pclass         0
+Sex            0
+Age            0
+SibSp          0
+Parch          0
+Ticket         0
+Fare           0
+Embarked       0
+title          0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="149">
+<div class="sourceCode" id="cb83"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>test.loc[ test[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">20</span>, <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>test.loc[(test[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">20</span>) <span class="op">&amp;</span> (test[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">24</span>), <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>test.loc[(test[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">24</span>) <span class="op">&amp;</span> (test[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">30</span>), <span class="st">&#39;Age&#39;</span>]   <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>test.loc[(test[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">30</span>) <span class="op">&amp;</span> (test[<span class="st">&#39;Age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">38</span>), <span class="st">&#39;Age&#39;</span>]   <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>test.loc[ test[<span class="st">&#39;Age&#39;</span>] <span class="op">&gt;</span> <span class="dv">38</span>, <span class="st">&#39;Age&#39;</span>] <span class="op">=</span> <span class="dv">4</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="150">
+<div class="sourceCode" id="cb84"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>test[<span class="st">&#39;Age&#39;</span>] <span class="op">=</span> test[<span class="st">&#39;Age&#39;</span>].astype(<span class="bu">int</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="151">
+<div class="sourceCode" id="cb85"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> pd.get_dummies(test[<span class="st">&quot;title&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="152">
+<div class="sourceCode" id="cb86"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>sex <span class="op">=</span> pd.get_dummies(test[<span class="st">&quot;Sex&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="153">
+<div class="sourceCode" id="cb87"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>embarked <span class="op">=</span> pd.get_dummies(test[<span class="st">&quot;Embarked&quot;</span>], drop_first <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="154">
+<div class="sourceCode" id="cb88"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>entrega <span class="op">=</span> pd.concat([test,sex,embarked,title] , axis <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="155">
+<div class="sourceCode" id="cb89"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>entrega.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="155">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Pclass</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Embarked</th>
+      <th>title</th>
+      <th>male</th>
+      <th>Q</th>
+      <th>S</th>
+      <th>Miss</th>
+      <th>Mr</th>
+      <th>Mrs</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892</td>
+      <td>3</td>
+      <td>male</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>330911</td>
+      <td>0</td>
+      <td>Q</td>
+      <td>Mr</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>893</td>
+      <td>3</td>
+      <td>female</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>363272</td>
+      <td>0</td>
+      <td>S</td>
+      <td>Mrs</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>894</td>
+      <td>2</td>
+      <td>male</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>240276</td>
+      <td>1</td>
+      <td>Q</td>
+      <td>Mr</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>895</td>
+      <td>3</td>
+      <td>male</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>315154</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Mr</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>896</td>
+      <td>3</td>
+      <td>female</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3101298</td>
+      <td>1</td>
+      <td>S</td>
+      <td>Mrs</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="156">
+<div class="sourceCode" id="cb90"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>entrega.drop([<span class="st">&#39;Sex&#39;</span>, <span class="st">&#39;Embarked&#39;</span>, <span class="st">&#39;Ticket&#39;</span>,<span class="st">&#39;title&#39;</span>], axis <span class="op">=</span> <span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="157">
+<div class="sourceCode" id="cb91"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a>entrega.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="157">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+      <th>male</th>
+      <th>Q</th>
+      <th>S</th>
+      <th>Miss</th>
+      <th>Mr</th>
+      <th>Mrs</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>893</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>894</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>895</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>896</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="158">
+<div class="sourceCode" id="cb92"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>passenger_id <span class="op">=</span> entrega[[<span class="st">&quot;PassengerId&quot;</span>]]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="159">
+<div class="sourceCode" id="cb93"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>passenger_id.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="159">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>893</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>894</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>895</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>896</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="160">
+<div class="sourceCode" id="cb94"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>entrega.drop(<span class="st">&quot;PassengerId&quot;</span>, axis <span class="op">=</span><span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="161">
+<div class="sourceCode" id="cb95"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>entrega.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="161">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+      <th>male</th>
+      <th>Q</th>
+      <th>S</th>
+      <th>Miss</th>
+      <th>Mr</th>
+      <th>Mrs</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="162">
+<div class="sourceCode" id="cb96"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>predicciones <span class="op">=</span> logmodel.predict(entrega)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="163">
+<div class="sourceCode" id="cb97"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>predicciones</span></code></pre></div>
+<div class="output execute_result" data-execution_count="163">
+<pre><code>array([0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0,
+       1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1,
+       1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1,
+       1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+       0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1,
+       1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
+       0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1,
+       1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1,
+       0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0,
+       1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+       0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1,
+       0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0,
+       1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0,
+       0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0,
+       1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1,
+       0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1],
+      dtype=int64)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="164">
+<div class="sourceCode" id="cb99"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>predicciones <span class="op">=</span> pd.DataFrame(logmodel.predict(entrega))</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="165">
+<div class="sourceCode" id="cb100"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>predicciones</span></code></pre></div>
+<div class="output execute_result" data-execution_count="165">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>413</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>414</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>415</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>416</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>417</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>418 rows × 1 columns</p>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="166">
+<div class="sourceCode" id="cb101"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>entrega_titanic <span class="op">=</span> pd.concat([passenger_id, predicciones], axis <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="167">
+<div class="sourceCode" id="cb102"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a>entrega_titanic.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="167">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>893</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>894</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>895</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>896</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="168">
+<div class="sourceCode" id="cb103"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>entrega_titanic.columns <span class="op">=</span> [<span class="st">&quot;PassengerId&quot;</span>, <span class="st">&quot;Survived&quot;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="169">
+<div class="sourceCode" id="cb104"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>entrega_titanic.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="169">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>892</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>893</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>894</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>895</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>896</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="170">
+<div class="sourceCode" id="cb105"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a>entrega_titanic.to_csv(<span class="st">&quot;entrega_titanic.csv&quot;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb106"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>jupyter nbconvert  Titanic.ipynb <span class="op">--</span>to html</span></code></pre></div>
+<div class="output execute_result" data-execution_count="2">
+<pre><code>1</code></pre>
+</div>
+</div>
+</body>
+</html>
